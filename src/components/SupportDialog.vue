@@ -8,14 +8,10 @@
           <p class="mt-1 text-gray-600">Create a new support request</p>
         </div>
         <button @click="$emit('close')" class="text-gray-400 transition-colors hover:text-gray-600">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          <SvgIcon
+            name="cross"
+            class="h-6 w-6"
+          />
         </button>
       </div>
 
@@ -143,6 +139,7 @@
 
 <script setup lang="ts">
   import { reactive } from 'vue'
+  import SvgIcon from './SvgIcon/SvgIcon.vue'
 
   const emit = defineEmits(['close'])
 
