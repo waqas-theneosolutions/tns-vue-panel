@@ -7,16 +7,32 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "jiti": "^2.6.1",
+    "vue": "^3.3.4",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@types/node": "^25.0.2",
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
     "autoprefixer": "^10.4.15",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.27.0",
     "postcss": "^8.4.29",
+    "prettier": "^3.4.0",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "typescript": "^5.9.3",
+    "vite": "^4.4.5",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^3.1.8"
   }
 }
